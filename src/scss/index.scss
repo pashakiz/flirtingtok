@@ -1,0 +1,224 @@
+.firstscreen__imgbg1 {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+.firstscreen__imgbg2 {
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.secondscreen {
+  display: none;
+
+  &.secondscreen_1 {
+    padding-top: 80px;
+    @media (min-width: 992px) {
+      padding-top: 173px;
+    }
+  }
+
+  &.secondscreen_2 {
+    padding-top: 40px;
+    @media (min-width: 992px) {
+      padding-top: 130px;
+    }
+  }
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 218px;
+  margin: 0 auto 20px;
+  @media (min-width: 992px) {
+    max-width: 350px;
+    margin: 110px auto 51px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 250px;
+    margin: 70px 0 41px;
+  }
+  @media (min-width: 1650px) {
+    max-width: 350px;
+    margin: 110px 0 51px;
+  }
+  .countdown-js {
+    width: 100%;
+  }
+}
+
+.timer__title {
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $btn_bg_color;
+  text-transform: uppercase;
+  margin: 0 0 25px 0;
+  text-align: center;
+  @media (min-width: 992px) {
+    text-align: left;
+    font-size: 42px;
+    margin: 0 0 42px 0;
+  }
+  @media (min-width: 1200px) {
+    width: 100%;
+    font-size: 30px;
+    margin: 0 0 24px 0;
+  }
+  @media (min-width: 1650px) {
+    font-size: 42px;
+    margin: 0 0 42px 0;
+  }
+}
+
+.userfback {
+  width: 299px;
+  height: 320px;//271
+  position: relative;
+  @media (min-width: 1200px) {
+    width: 371px;
+    height: 365px;
+  }
+}
+
+.userfback__elps {
+  width: 256px;
+  height: 296px;
+  min-height: 296px;
+  max-height: 296px;
+  margin: 0 auto;
+  background-color: $bg_light_2;
+  border-radius: 100%;
+  transform: rotate(-50deg) translateX(-15px);
+  @media (min-width: 1200px) {
+    width: 316px;
+    height: 363px;
+    min-height: 363px;
+    max-height: 363px;
+    transform: rotate(-40deg);
+  }
+}
+
+.userfback__bg {
+  width: 256px;
+  height: 320px;
+  border-radius: 100%;
+  background-image: url('../img/bg/ellipse-vertical.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 12px;
+  transform: rotate(-28deg);
+  @media (min-width: 1200px) {
+    transform: rotate(-52deg);
+    width: 316px;
+    height: 390px;
+    top: -14px;
+    left: 27px;
+  }
+}
+
+.userfback__inf {
+  text-align: center;
+  padding: 40px 30px 40px 55px;
+  color: $body_bg_color;
+  transform: rotate(50deg);
+  @media (min-width: 1200px) {
+    padding: 55px 30px 48px 70px;
+    transform: rotate(40deg);
+  }
+}
+
+.userfback__name {
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 21px;
+  text-transform: uppercase;
+  margin: 0 0 22px 0;
+  @media (min-width: 1200px) {
+    font-size: 32px;
+    margin: 0 0 27px 0;
+  }
+}
+
+.userfback__txt {
+  font-family: $font_family;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1;
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
+  p {
+    line-height: 23px;
+    margin-bottom: 5px;
+    @media (min-width: 1200px) {
+      line-height: 23px;
+    }
+  }
+}
+
+.search-progress {
+  &.progress {
+    width: 100%;
+    height: 38px;
+    background-color: $bg_dark_1;
+    border-radius: 0;
+    position: relative;
+    @media (min-width: 992px) {
+      height: 50px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 360px;
+    }
+    @media (min-width: 1400px) {
+      max-width: 400px;
+    }
+    @media (min-width: 1650px) {
+      max-width: 360px;
+    }
+    @media (min-width: 1920px) {
+      max-width: 400px;
+    }
+  }
+  .progress-bar {
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    transition: width 0.2s linear;
+    background-color: $btn_bg_color;
+  }
+  .search-progress__title {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -12px);
+    z-index: 10;
+    color: #fff;
+    font-family: $font_family;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    @media (min-width: 992px) {
+      font-size: 19px;
+      transform: translate(-50%, -14px);
+    }
+  }
+  .search-progress__value {
+    @media (min-width: 992px) {
+      margin: 0 0 0 10px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  .logo__img {
+    width: 35px;
+    height: 38px;
+    background-image: url('../img/icons/logo.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 0 13px 0 0;
+    @media (min-width: 992px) {
+      margin: 0 26px 0 0;
+      width: 66px;
+      height: 72px;
+    }
+  }
+  .logo__txt {
+    font-family: $font_family2;
+    font-weight: 400;
+    font-size: 23px;
+    color: $font_color2;
+    line-height: 1;
+    transform: translateY(4px);
+    @media (min-width: 992px) {
+      font-size: 55px;
+      transform: translateY(-3px);
+    }
+  }
+
+  &.logo_footer {
+    display: none;
+    @media (min-width: 1400px) {
+      display: flex;
+    }
+    .logo__img {
+      width: 45px;
+      height: 49px;
+    }
+    .logo__txt {
+      font-size: 38px;
+    }
+  }
+
+  &.logo_main {
+    width: 178px;
+    margin: 45px auto 44px;
+    @media (min-width: 992px) {
+      width: 408px;
+    }
+    @media (min-width: 1200px) {
+      width: auto;
+      margin: 112px 0 70px;
+    }
+    @media (min-width: 1650px) {
+      margin: 112px 0 97px;
+    }
+  }
+
+}

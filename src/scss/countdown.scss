@@ -1,0 +1,105 @@
+/*
+* Autor: Pavel Kizernis (pashakiz@gmail.com)
+* https://github.com/pashakiz/countdown.js
+*/
+
+.clockface {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1;
+	color: #FFE3EB;
+  background-color: $btn_bg_color;
+  @media (min-width: 992px) {
+    font-size: 70px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 35px;
+  }
+  @media (min-width: 1650px) {
+    font-size: 70px;
+  }
+}
+
+.clockface-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 46px;
+  @media (min-width: 992px) {
+    //width: 90px;
+    height: 90px;
+  }
+  @media (min-width: 1200px) {
+    height: 46px;
+  }
+  @media (min-width: 1650px) {
+    height: 90px;
+  }
+
+  &.clockface-item_days {
+    display: none;
+    + .clockface__separator {
+      display: none;
+    }
+  }
+
+  &.clockface-item_hours {
+    display: none;
+    + .clockface__separator {
+      display: none;
+    }
+  }
+
+}
+
+.clockface-item_mins {
+  justify-content: flex-end;
+}
+.clockface-item_seconds {
+  justify-content: flex-start;
+}
+
+.clockface__separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  margin: 0 18px;
+  @media (min-width: 992px) {
+    height: 90px;
+    margin: 0 38px;
+  }
+  @media (min-width: 1200px) {
+    height: 46px;
+    margin: 0 18px;
+  }
+  @media (min-width: 1650px) {
+    height: 90px;
+    margin: 0 38px;
+  }
+  &::after {
+    content: ':';
+    height: 40px;
+    @media (min-width: 992px) {
+      height: 86px;
+    }
+    @media (min-width: 1200px) {
+      height: 40px;
+    }
+    @media (min-width: 1650px) {
+      height: 86px;
+    }
+  }
+}
+
+.clockface__title {
+	font-size: 16px;
+	line-height: 1;
+	color: #777;
+	margin-top: 8px;
+}
