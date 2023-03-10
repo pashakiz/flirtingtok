@@ -171,17 +171,18 @@ h1 {
 
 h2 {
   font-family: $font_family2;
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 44px;
-  color: $font_color2;
-  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 39px;
+  color: $font_color;
+  margin-bottom: 28px;
   margin-top: 0;
   text-transform: uppercase;
+  text-align: center;
   @media (min-width: 992px) {
-    font-size: 63px;
-    line-height: 94px;
-    margin-bottom: 65px;
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 56px;
   }
 
   &.h2_index {
@@ -225,21 +226,21 @@ h3 {
   font-family: $font_family;
   font-weight: 400;
   color: $font_color;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 39px;
-  margin-top: 55px;
-  margin-bottom: 18px;
+  margin-top: 25px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   @media (min-width: 992px) {
     font-size: 21px;
     line-height: 39px;
-    margin-top: 90px;
-    margin-bottom: 20px;
+    margin-top: 64px;
+    margin-bottom: 30px;
   }
 }
 
 p {
-  line-height: 39px;
+  line-height: 33px;
   margin-bottom: 1rem;
   @media (min-width: 992px) {
     line-height: 39px;

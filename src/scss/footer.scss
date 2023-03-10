@@ -16,9 +16,10 @@
 
   a.footer__link {
     font-family: $font_family2;
-    font-weight: 400;
+    font-weight: 700;
     color: $footer_text_color;
-    font-size: 17px;
+    font-size: 15px;
+    letter-spacing: 4px;
     line-height: 1;
     text-transform: uppercase;
   }
@@ -47,6 +48,13 @@
       }
     }
   }
+  @media (min-width: 1400px) {
+    a.footer__link {
+      + a.footer__link {
+        margin-left: 99px;
+      }
+    }
+  }
 }
 
 .footer__bottom {
@@ -55,7 +63,7 @@
     padding: 17px 0 80px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
   }
 }
