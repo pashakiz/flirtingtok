@@ -1,24 +1,24 @@
 //checkbox
-$cc_font_color: $font_color2;
-$cc_font_size_mob: 14px;
-$cc_font_size: 20px;
+$cc_font_color: $font_color;
+$cc_font_size_mob: 18px;
+$cc_font_size: 30px;
 
-$cc_icon_color: $bg_dark_1;
-$cc_icon_width_mob: 40px;
-$cc_icon_height_mob: 40px;
-$cc_icon_width: 36px;
-$cc_icon_height: 36px;
+$cc_icon_color: $body_bg_color;
+$cc_icon_width_mob: 30px;
+$cc_icon_height_mob: 30px;
+$cc_icon_width: 40px;
+$cc_icon_height: 40px;
 $cc_icon_right_mob: 17px;
-$cc_icon_right: 15px;
-$cc_icon_bradius: 100%;
-$cc_icon_border: none;
+$cc_icon_right: 19px;
+$cc_icon_bradius: 5px;
+$cc_icon_border: 1px solid $font_color;
 
 $cc_mark_color: $btn_bg_color;
-$cc_mark_width_mob: 18px;
-$cc_mark_height_mob: 18px;
+$cc_mark_width_mob: 14px;
+$cc_mark_height_mob: 14px;
 $cc_mark_width: 20px;
 $cc_mark_height: 20px;
-$cc_mark_bradius: 100%;
+$cc_mark_bradius: 5px;
 
 //switcher
 $cs_font_color: $font_color2;
@@ -48,16 +48,17 @@ $cs_mark_color_off: $bg_light_1;
 $cs_mark_color_on: $btn_bg_color;
 
 //switcher inline
-$csi_font_size_mob: 12px;
-$csi_font_size: 20px;
-$csi_icon_right_mob: 16px;
-$csi_icon_right: 28px;
+$csi_font_size_mob: 14px;
+$csi_font_size: 30px;
+$csi_icon_right_mob: 24px;
+$csi_icon_right: 29px;
 
 .customcheck {
   display: block;
   margin-bottom: 10px;
 
   .customcheck__label {
+    font-weight: 400;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -137,9 +138,9 @@ $csi_icon_right: 28px;
 .customcheck_radio-inline {
   margin: 0;
   + .customcheck_radio-inline {
-    margin: 0 0 0 17px;
+    margin: 0 0 0 34px;
     @media (min-width: 992px) {
-      margin: 0 0 0 50px;
+      margin: 0 0 0 90px;
     }
   }
 }
@@ -252,9 +253,12 @@ $csi_icon_right: 28px;
 }
 
 .customcheck_switch-inline {
+  border: none;
   margin: 0;
+  padding: 0;
 
   .customcheck__label {
+    font-weight: 400;
     flex-direction: row;
     align-items: center;
     text-transform: uppercase;
@@ -265,6 +269,7 @@ $csi_icon_right: 28px;
     }
 
     .customcheck__icon {
+      transform: rotate(0deg);
       //margin: $cs_mark_height_mob/4 auto $csi_icon_right_mob;
       margin: $cs_mark_height_mob/4 $csi_icon_right_mob $cs_mark_height_mob/4 0;
       @media (min-width: 992px) {

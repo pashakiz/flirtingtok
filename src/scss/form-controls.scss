@@ -19,16 +19,17 @@
   border: $input_border;
   background-color: $input_bg;
   border-radius: $input_border_radius;
-  padding: 12px 19px;
+  padding: 12px 18px;
   color: $input_txt_color;
   font-family: $input_txt_family;
   font-size: $input_txt_xs_size;
   line-height: $input_txt_xs_lh;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-weight: 300;
+  //text-transform: uppercase;
   &:hover {
     background-color: $input_hover_bg;
     color: $input_hover_txt_color;
+    border: $input_hover_border;
   }
   &:focus {
     box-shadow: none;
@@ -42,7 +43,7 @@
     opacity: 0.7;
   }
   @media (min-width: 992px) {
-    padding: 18px 30px;
+    padding: 18px 38px;
     font-size: $input_txt_size;
     line-height: $input_txt_lh;
   }
@@ -63,20 +64,20 @@
 }
 
 input.form-control {
-  height: 50px;
+  height: 52px;
   @media (min-width: 992px) {
-    height: 62px;
+    height: 78px;
   }
   @media (min-width: 1200px) {
-    height: 62px;
+    height: 78px;
   }
   &.form-control_login {
-    height: 50px;
+    height: 52px;
     @media (min-width: 1200px) {
-      height: 65px;
+      height: 78px;
     }
     @media (min-width: 1400px) {
-      height: 65px;
+      height: 78px;
     }
   }
 }
@@ -95,15 +96,15 @@ textarea.form-control {
 
 .custom-file {
   display: block;
-  width: 182px;
+  width: 230px;
   height: auto;
   position: relative;
-  transform: rotate(-12deg);
+  transform: rotate(6deg);
   @media (min-width: 768px) {
-    width: 182px;
+    width: 230px;
   }
   @media (min-width: 1200px) {
-    width: 225px;
+    width: 290px;
   }
 
   .custom-file-input {

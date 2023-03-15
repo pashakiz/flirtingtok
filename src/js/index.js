@@ -25,7 +25,6 @@ const profilePhoto = document.querySelector('.settings-photo .profile-photo-img'
 const uploadPhoto = () => {
   let url = 'assets/img/photos/ava.jpg';
   profilePhoto.style.backgroundImage = 'url(' + url + ')';
-  console.log('uploadPhoto');
 }
 if (!!uploadPhotoInput)
   uploadPhotoInput.addEventListener('change', uploadPhoto, false);

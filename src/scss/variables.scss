@@ -5,14 +5,14 @@ $body_bg_color:             #EAEAEA;
 $btn_bg_color:              #9DE83F;
 $btn_bg_color_hover:        #91DA36;
 $btn_bg_color_active:       #A1FF2C;
-/**/$bg_dark_1:                 #2A2828;
-/**/$bg_dark_2:                 #3E3636;
+$bg_dark_1:                 #FE73AA;
+$bg_dark_2:                 #fe89a4;
 $bg_light_1:                #CECECE;
 /**/$bg_light_2:                #B7998C;
 /**/$bg_light_3:                #36BD9C;
 $font_color:                #232323;
 $font_color2:               #000;
-/**/$font_color3:               #111112;
+$font_color3:               #635D5D;
 /**/$font_color4:               #544D4D;
 $font_family:               "CeraPro", sans-serif;
 $font_weight:               300;
@@ -36,22 +36,22 @@ $footer_text_color_hover:   $link_hover_color;
 $footer_text_color_active:  $link_active_color;
 
 //Form
-/**/$input_bg:                  $bg_light_1;
-/**/$input_hover_bg:            $input_bg;
-/**/$input_txt_family:          $font_family;
-/**/$input_txt_color:           $font_color3;
-/**/$input_hover_txt_color:     $font_color3;
-/**/$input_placeholder_color:   $font_color4;
-/**/$input_txt_xs_size:         14px;
-/**/$input_txt_xs_lh:           1.5;
-/**/$input_txt_size:            20px;
-/**/$input_txt_lh:              1.5;
-/**/$input_border_color:        $input_bg;
-/**/$input_border:              none;
-/**/$input_hover_border:        $input_border;
-/**/$input_border_radius:       0;
-/**/$textarea_border_radius:    0;
-/**/$textarea_border_radius_mob:0;
+$input_bg:                  $body_bg_color;
+$input_hover_bg:            $input_bg;
+$input_txt_family:          $font_family;
+$input_txt_color:           $font_color;
+$input_hover_txt_color:     $font_color;
+$input_placeholder_color:   $font_color3;
+$input_txt_xs_size:         18px;
+$input_txt_xs_lh:           1.5;
+$input_txt_size:            28px;
+$input_txt_lh:              1.5;
+$input_border_color:        $font_color;
+$input_border:              1px solid $input_border_color;
+$input_hover_border:        1px solid $btn_bg_color;
+$input_border_radius:       5px;
+$textarea_border_radius:    5px;
+$textarea_border_radius_mob:5px;
 
 
 //User List page wider
