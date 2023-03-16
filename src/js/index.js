@@ -56,17 +56,40 @@ if (!!splides) {
 if (document.querySelector('.splide_up') !== null) {
   new Splide( '.splide_up', {
     type       : 'loop',
-    arrows     : false,
+    arrows     : true,
+    //arrowPath  : 'M0,0H40V40H0Z',
+    arrowPath  : 'M0.585694 14L14.2928 0.292938L15.707 1.70715L3.41412 14L15.707 26.2929L14.2928 27.7072L0.585694 14Z',
     autoHeight : true,
     autoWidth  : true,
     perPage    : 1,
     gap        : '60px',
+    //fixedWidth : '525px',
+    mediaQuery : 'min',
     breakpoints: {
       992: {
         gap    : '33px',
       },
+      1200: {
+        fixedWidth : '525px',
+        arrowPath  : 'M3.43876 30L32.695 1.71898L31.3049 0.281006L0.561157 30L31.3049 59.719L32.695 58.281L3.43876 30Z',
+        gap        : '33px',
+      },
+      1400: {
+        fixedWidth : '525px',
+        gap        : '33px',
+      },
     },
   } ).mount();
+
+  // Make arrows size
+  let svgSize = document.documentElement.clientWidth < 1200 ? 28 : 60;
+  let svgArrows = document.querySelectorAll('.splide__arrow svg');
+  svgArrows.forEach(el => {
+    el.setAttribute("viewBox", '0 0 '+svgSize+' '+svgSize);
+    el.setAttribute("width", svgSize);
+    el.setAttribute("height", svgSize);
+  });
+
 }
 
 if (document.querySelector('.splide_ulist') !== null) {

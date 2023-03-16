@@ -15,11 +15,11 @@
   position: relative;
   z-index: 1;
   &:hover {
-    color: $font_color3;
+    color: $font_color;
     background-color: $btn_bg_color_hover;
   }
   &:active {
-    color: $font_color3 !important;
+    color: $font_color !important;
     background-color: $btn_bg_color_active !important;
   }
   &:focus {

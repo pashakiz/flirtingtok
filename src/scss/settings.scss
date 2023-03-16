@@ -38,7 +38,6 @@ $settings-img-wrap-height-xl: 766px;
   left: -20px;
   overflow: hidden;
   padding: 18px 0 0 0;
-  @media (min-width: 364px) {}
   @media (min-width: 353px) {
     left: 0;
     width: $settings-img-wrap-width;
@@ -48,7 +47,6 @@ $settings-img-wrap-height-xl: 766px;
     overflow: visible;
   }
   @media (min-width: 1200px) {
-
     padding: 0;
     width: $settings-img-wrap-width-lg;
     max-width: $settings-img-wrap-width-lg;
@@ -66,7 +64,6 @@ $settings-img-wrap-height-xl: 766px;
   height: $settings-img-wrap-height;
   left: -10px;
   position: relative;
-  //transform: rotate(12deg);
   @media (min-width: 330px) {
     left: -5px;
   }
@@ -92,9 +89,6 @@ $settings-img-wrap-height-xl: 766px;
     max-height: 562px;
     border-radius: 300px;
     background-color: $bg_dark_1;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: contain;
     position: absolute;
     z-index: -1;
     top: -20px;
