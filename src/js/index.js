@@ -98,11 +98,12 @@ if (document.querySelector('.splide_ulist') !== null) {
     arrows     : false,
     autoHeight : true,
     autoWidth  : true,
-    gap        : '67px',
+    gap        : '50px',
+    mediaQuery : 'min',
     //perPage    : 4,
     breakpoints: {
       992: {
-        gap    : '50px',
+        gap    : '67px',
       },
     },
   } ).mount();
@@ -114,11 +115,15 @@ if (document.querySelector('.splide_ulist-extra') !== null) {
     arrows     : false,
     autoHeight : true,
     autoWidth  : true,
-    gap        : '58px',
+    gap        : '50px',
+    mediaQuery : 'min',
     //perPage    : 4,
     breakpoints: {
       992: {
-        gap    : '50px',
+        gap    : '58px',
+      },
+      1650: {
+        gap    : '70px',
       },
     },
   } ).mount();
