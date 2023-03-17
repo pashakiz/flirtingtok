@@ -83,7 +83,7 @@ if (document.querySelector('.splide_up') !== null) {
 
   // Make arrows size
   let svgSize = document.documentElement.clientWidth < 1200 ? 28 : 60;
-  let svgArrows = document.querySelectorAll('.splide__arrow svg');
+  let svgArrows = document.querySelectorAll('.splide_up .splide__arrow svg');
   svgArrows.forEach(el => {
     el.setAttribute("viewBox", '0 0 '+svgSize+' '+svgSize);
     el.setAttribute("width", svgSize);
@@ -132,16 +132,22 @@ if (document.querySelector('.splide_ulist-extra') !== null) {
 if (document.querySelector('.splide_fback') !== null) {
   new Splide( '.splide_fback', {
     type       : 'loop',
-    arrows     : false,
+    arrows     : true,
+    arrowPath  : 'M0.585694 14L14.2928 0.292938L15.707 1.70715L3.41412 14L15.707 26.2929L14.2928 27.7072L0.585694 14Z',
     autoHeight : true,
     autoWidth  : true,
-    gap        : '120px',
+    gap        : '20px',
+    mediaQuery : 'min',
     breakpoints: {
+      992: {
+        arrows : false,
+        gap    : '30px',
+      },
       1200: {
-        gap    : '20px',
+        gap    : '60px',
       },
       1650: {
-        gap    : '60px',
+        gap    : '120px',
       },
     },
   } ).mount();
