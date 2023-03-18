@@ -47,26 +47,26 @@
   &.btn_1 { //index
     display: block;
     width: 100%;
-    @media (min-width: 992px) {}
+    height: 52px;
+    @media (min-width: 992px) {
+      font-size: 20px;
+      padding: 14px 10px;
+    }
     @media (min-width: 1200px) {
       font-size: 24px;
-      max-width: 360px;
       height: 80px;
     }
     @media (min-width: 1400px) {
       font-size: 28px;
-      max-width: 400px;
       height: 90px;
     }
     @media (min-width: 1650px) {
-      font-size: 24px;
-      max-width: 360px;
-      height: 80px;
+      font-size: 30px;
+      height: 100px;
     }
     @media (min-width: 1920px) {
-      font-size: 28px;
-      max-width: 400px;
-      height: 90px;
+      font-size: 30px;
+      height: 100px;
     }
   }
 

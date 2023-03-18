@@ -186,11 +186,11 @@ h2 {
   }
 
   &.h2_index {
-    font-size: 42px;
-    line-height: 44px;
-    margin-bottom: 31px;
+    font-size: 48px;
+    line-height: 47px;
+    margin-bottom: 30px;
     text-align: center;
-    color: $font_color2;
+    color: $font_color;
     text-transform: uppercase;
     @media (min-width: 768px) {
       text-align: left;
@@ -199,17 +199,26 @@ h2 {
       text-align: left;
     }
     @media (min-width: 1200px) {
-      font-size: 63px;
-      line-height: 94px;
+      font-size: 80px;
+      line-height: 39px;
+      margin-bottom: 70px;
     }
     @media (min-width: 1650px) {
-      font-size: 63px;
-      line-height: 94px;
+      font-size: 80px;
+      line-height: 39px;
     }
     span.h2_index2row {
-      font-size: 32px;
-      @media (min-width: 1200px) {
+      font-size: 37px;
+      line-height: 47px;
+      @media (min-width: 768px) {
         font-size: 48px;
+        line-height: 39px;
+      }
+      @media (min-width: 1200px) {
+        font-size: 80px;
+      }
+      @media (min-width: 1650px) {
+        font-size: 80px;
       }
     }
   }
@@ -319,11 +328,11 @@ p {
 
 .secondscreen {
   p.pmain {
-    font-size: 14px;
-    line-height: 39px !important;
+    font-size: 16px;
+    line-height: 30px !important;
     margin-bottom: 2rem;
     @media (min-width: 992px) {
-      font-size: 18px !important;
+      font-size: 21px !important;
       line-height: 39px !important;
     }
   }

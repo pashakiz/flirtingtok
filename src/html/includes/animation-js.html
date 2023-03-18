@@ -77,7 +77,7 @@
       let timerId = setTimeout(function run() {
           progressBar.style.width = tickValue + '%';
           progressBar.setAttribute('aria-valuenow', tickValue);
-          valueVisible.innerHTML = tickValue + ' %';
+          valueVisible.innerHTML = tickValue + '%';
           tickValue++;
           if(tickValue == 30) {
                 titles.forEach(title => title.style.display = 'none');

@@ -126,24 +126,15 @@
 .search-progress {
   &.progress {
     width: 100%;
-    height: 38px;
-    background-color: $bg_dark_1;
+    height: 52px;
+    background-color: $btn_bg_color;
     border-radius: 0;
     position: relative;
     @media (min-width: 992px) {
-      height: 50px;
+      height: 52px;
     }
     @media (min-width: 1200px) {
-      max-width: 360px;
-    }
-    @media (min-width: 1400px) {
-      max-width: 400px;
-    }
-    @media (min-width: 1650px) {
-      max-width: 360px;
-    }
-    @media (min-width: 1920px) {
-      max-width: 400px;
+      height: 78px;
     }
   }
   .progress-bar {
@@ -151,24 +142,24 @@
     border: none;
     border-radius: 0;
     transition: width 0.2s linear;
-    background-color: $btn_bg_color;
+    background-color: $bg_dark_1;
   }
   .search-progress__title {
     position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -12px);
+    transform: translate(-50%, -15px);
     z-index: 10;
-    color: #fff;
+    color: $font_color;
     font-family: $font_family;
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
-    @media (min-width: 992px) {
-      font-size: 19px;
-      transform: translate(-50%, -14px);
+    @media (min-width: 1200px) {
+      font-size: 30px;
+      transform: translate(-50%, -24px);
     }
   }
   .search-progress__value {

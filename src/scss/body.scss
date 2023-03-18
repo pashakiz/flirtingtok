@@ -9,6 +9,10 @@ body {
     font-size: $font_size;
   }
 
+  &.bg-color {
+    background: $bg_light_3;
+  }
+
   &.bg-pattern {
     @media (min-width: 992px) {
       background-repeat: no-repeat;
